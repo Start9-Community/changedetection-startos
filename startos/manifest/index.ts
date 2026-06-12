@@ -3,7 +3,7 @@ import { long, short } from './i18n'
 
 export const manifest = setupManifest({
   id: 'changedetection',
-  title: 'changedetection.io',
+  title: 'ChangeDetection.io',
   license: 'GPL-3.0',
   packageRepo: 'https://github.com/BeeJoe/changedetection-startos',
   upstreamRepo: 'https://github.com/dgtlmoon/changedetection.io',
@@ -13,7 +13,9 @@ export const manifest = setupManifest({
   volumes: ['main'],
   images: {
     main: {
-      source: { dockerTag: 'lscr.io/linuxserver/changedetection.io:0.55.7' },
+      source: {
+        dockerTag: 'lscr.io/linuxserver/changedetection.io:0.55.7-ls296',
+      },
       arch: ['x86_64', 'aarch64'],
     },
   },

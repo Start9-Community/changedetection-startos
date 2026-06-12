@@ -1,6 +1,6 @@
-# changedetection.io
+# ChangeDetection.io
 
-You've installed changedetection.io, a web page and API change monitoring service. Use the web UI to add watches, review diffs, and configure notifications.
+You've installed ChangeDetection.io, a web page and API change monitoring service. Use the web UI to add watches, review diffs, and configure notifications.
 
 ## Documentation
 
@@ -9,7 +9,7 @@ You've installed changedetection.io, a web page and API change monitoring servic
 
 ## What you get on StartOS
 
-- **A persistent changedetection.io instance** with its datastore backed up by StartOS.
+- **A persistent ChangeDetection.io instance** with its datastore backed up by StartOS.
 - **A web UI and API** exposed through the service's **Web UI** interface.
 - **Bundled Playwright content fetching** from the LinuxServer container image for browser-backed watches.
 - **Upstream notification integrations** configured inside changedetection.io.

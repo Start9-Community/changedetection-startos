@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="icon.svg" alt="changedetection.io Logo" width="21%">
+  <img src="icon.svg" alt="ChangeDetection.io Logo" width="21%">
 </p>
 
-# changedetection.io on StartOS
+# ChangeDetection.io on StartOS
 
 > **Upstream docs:** <https://github.com/dgtlmoon/changedetection.io>
 >
@@ -10,7 +10,7 @@
 > changedetection.io. If a feature, setting, or behavior is not mentioned here,
 > the upstream documentation is accurate and fully applicable.
 
-changedetection.io monitors web pages, JSON APIs, and documents for changes, then sends alerts through its upstream notification integrations.
+ChangeDetection.io monitors web pages, JSON APIs, and documents for changes, then sends alerts through its upstream notification integrations.
 
 ---
 

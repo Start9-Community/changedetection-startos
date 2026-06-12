@@ -3,7 +3,7 @@ import { sdk } from './sdk'
 import { uiPort } from './utils'
 
 export const main = sdk.setupMain(async ({ effects }) => {
-  console.info(i18n('Starting changedetection.io'))
+  console.info(i18n('Starting ChangeDetection.io'))
 
   return sdk.Daemons.of(effects).addDaemon('primary', {
     subcontainer: await sdk.SubContainer.of(
