@@ -2,14 +2,14 @@ export const DEFAULT_LANG = 'en_US'
 
 const dict = {
   // main.ts
-  'Starting changedetection.io': 0,
+  'Starting ChangeDetection.io': 0,
   'Web Interface': 1,
   'The web interface is ready': 2,
   'The web interface is not ready': 3,
 
   // interfaces.ts
   'Web UI': 4,
-  'The changedetection.io web interface': 5,
+  'The ChangeDetection.io web interface': 5,
 } as const
 
 /**

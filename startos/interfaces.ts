@@ -10,7 +10,7 @@ export const setInterfaces = sdk.setupInterfaces(async ({ effects }) => {
   const ui = sdk.createInterface(effects, {
     name: i18n('Web UI'),
     id: 'ui',
-    description: i18n('The changedetection.io web interface'),
+    description: i18n('The ChangeDetection.io web interface'),
     type: 'ui',
     masked: false,
     schemeOverride: null,
