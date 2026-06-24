@@ -14,7 +14,7 @@ export const manifest = setupManifest({
   images: {
     main: {
       source: {
-        dockerTag: 'lscr.io/linuxserver/changedetection.io:0.55.7-ls297',
+        dockerTag: 'lscr.io/linuxserver/changedetection.io:0.55.7-ls298',
       },
       arch: ['x86_64', 'aarch64'],
     },
