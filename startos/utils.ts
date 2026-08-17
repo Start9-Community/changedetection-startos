@@ -7,7 +7,8 @@ export const uiPort = 5000
  *
  * changedetection.io derives the key with PBKDF2-HMAC-SHA256, a 32-byte random
  * salt, and 100,000 iterations, then stores `base64(salt + derivedKey)`.
- * Verified against changedetectionio/flask_app.py `check_password()`. The app
+ * Verified against changedetectionio/flask_app.py `check_password()`; re-check
+ * the parameters on a version bump, since a silent mismatch locks the user out. The app
  * reads `SALTED_PASS` ahead of its datastore password, so injecting this value
  * enables the upstream login without writing to the datastore.
  */
