@@ -1,63 +1,53 @@
 import { IMPOSSIBLE, VersionInfo } from '@start9labs/start-sdk'
 
 export const current = VersionInfo.of({
-  version: '0.60.8:0',
+  version: '0.60.9:0',
   releaseNotes: {
-    en_US: `Updated ChangeDetection.io to 0.60.8.
+    en_US: `Updated ChangeDetection.io to 0.60.9.
 
-- Refreshes the watch list and group settings UI, and adds progressive web app support.
-- Improves AI change summaries, including per-watch/group prompts, non-blocking requests, and safer API-key editing.
-- Fixes browser-step selection, restock detection, RSS timestamps, watch history, and scheduler timezone handling.
-- Includes upstream fixes for cross-site scripting, CSS injection, and CSRF protection when adding watches.
-- Improves import/API validation, page-title extraction, UI caching, and translations.
-- Manage Access explains what each access option means, and that a saved password is shown only once.
-- Manage Access shows its results in your StartOS language.
+- Stops trusting certificates from a compromised certificate authority (eMudhra).
+- Fixes restock and price detection reading decimal-comma prices ("39,99") as whole numbers.
+- Adds a \`unixtime\` filter for formatting Unix timestamps in notifications.
+- The language selector is available on the login page.
+- Updates notification, browser and parsing dependencies.
 
-Full upstream changes: https://github.com/dgtlmoon/changedetection.io/compare/0.55.8...0.60.8`,
-    es_ES: `Actualiza ChangeDetection.io a 0.60.8.
+Full upstream changes: https://github.com/dgtlmoon/changedetection.io/compare/0.60.8...0.60.9`,
+    es_ES: `Actualiza ChangeDetection.io a 0.60.9.
 
-- Renueva la interfaz de la lista de vigilancias y de los grupos, y añade compatibilidad con aplicaciones web progresivas.
-- Mejora los resúmenes de cambios con IA, incluidas las instrucciones por vigilancia o grupo, las solicitudes sin bloqueo y la edición más segura de claves API.
-- Corrige la selección de pasos del navegador, la detección de reposición, las fechas RSS, el historial y el manejo de zonas horarias del planificador.
-- Incluye correcciones de upstream para scripts entre sitios, inyección de CSS y protección CSRF al añadir vigilancias.
-- Mejora la validación de importaciones y API, la extracción de títulos, la caché de la interfaz y las traducciones.
-- Gestionar acceso explica qué significa cada opción de acceso y que una contraseña guardada se muestra una sola vez.
-- Gestionar acceso muestra sus resultados en el idioma de StartOS.
+- Deja de confiar en los certificados de una autoridad de certificación comprometida (eMudhra).
+- Corrige que la detección de reposición y de precios leyera los precios con coma decimal ("39,99") como números enteros.
+- Añade un filtro \`unixtime\` para dar formato a las marcas de tiempo Unix en las notificaciones.
+- El selector de idioma está disponible en la página de inicio de sesión.
+- Actualiza las dependencias de notificaciones, navegador y análisis.
 
-Todos los cambios de upstream: https://github.com/dgtlmoon/changedetection.io/compare/0.55.8...0.60.8`,
-    de_DE: `Aktualisiert ChangeDetection.io auf 0.60.8.
+Todos los cambios de upstream: https://github.com/dgtlmoon/changedetection.io/compare/0.60.8...0.60.9`,
+    de_DE: `Aktualisiert ChangeDetection.io auf 0.60.9.
 
-- Überarbeitet die Oberfläche der Überwachungsliste und Gruppeneinstellungen und unterstützt progressive Web-Apps.
-- Verbessert KI-Zusammenfassungen mit Anweisungen pro Überwachung oder Gruppe, nicht blockierenden Anfragen und sichererem Bearbeiten von API-Schlüsseln.
-- Behebt die Auswahl von Browserschritten, Wiederauffüllungserkennung, RSS-Zeitstempel, Überwachungsverlauf und Zeitzonenbehandlung des Zeitplaners.
-- Enthält Upstream-Korrekturen für Cross-Site-Scripting, CSS-Injektion und CSRF-Schutz beim Hinzufügen von Überwachungen.
-- Verbessert Import- und API-Validierung, Seitentitelextraktion, Oberflächen-Caching und Übersetzungen.
-- „Zugriff verwalten“ erklärt, was jede Zugriffsoption bedeutet und dass ein gespeichertes Passwort nur einmal angezeigt wird.
-- „Zugriff verwalten“ zeigt seine Ergebnisse in Ihrer StartOS-Sprache an.
+- Vertraut Zertifikaten einer kompromittierten Zertifizierungsstelle (eMudhra) nicht mehr.
+- Behebt, dass die Wiederauffüllungs- und Preiserkennung Preise mit Dezimalkomma („39,99“) als ganze Zahlen las.
+- Fügt einen \`unixtime\`-Filter hinzu, um Unix-Zeitstempel in Benachrichtigungen zu formatieren.
+- Die Sprachauswahl ist auf der Anmeldeseite verfügbar.
+- Aktualisiert Abhängigkeiten für Benachrichtigungen, Browser und Parsing.
 
-Alle Upstream-Änderungen: https://github.com/dgtlmoon/changedetection.io/compare/0.55.8...0.60.8`,
-    pl_PL: `Aktualizuje ChangeDetection.io do 0.60.8.
+Alle Upstream-Änderungen: https://github.com/dgtlmoon/changedetection.io/compare/0.60.8...0.60.9`,
+    pl_PL: `Aktualizuje ChangeDetection.io do 0.60.9.
 
-- Odświeża interfejs listy obserwacji i ustawień grup oraz dodaje obsługę progresywnych aplikacji internetowych.
-- Ulepsza podsumowania zmian przez AI: instrukcje dla obserwacji i grup, nieblokujące żądania oraz bezpieczniejszą edycję kluczy API.
-- Naprawia wybór kroków przeglądarki, wykrywanie uzupełnienia zapasów, znaczniki czasu RSS, historię obserwacji i obsługę stref czasowych w harmonogramie.
-- Zawiera poprawki upstream dotyczące skryptów między witrynami, wstrzykiwania CSS i ochrony CSRF przy dodawaniu obserwacji.
-- Ulepsza walidację importu i API, wyodrębnianie tytułów, pamięć podręczną interfejsu i tłumaczenia.
-- „Zarządzaj dostępem” wyjaśnia, co oznacza każda opcja dostępu i że zapisane hasło jest wyświetlane tylko raz.
-- „Zarządzaj dostępem” wyświetla wyniki w języku StartOS.
+- Przestaje ufać certyfikatom przejętego urzędu certyfikacji (eMudhra).
+- Naprawia odczytywanie przez wykrywanie zapasów i cen kwot z przecinkiem dziesiętnym („39,99”) jako liczb całkowitych.
+- Dodaje filtr \`unixtime\` do formatowania znaczników czasu Unix w powiadomieniach.
+- Wybór języka jest dostępny na stronie logowania.
+- Aktualizuje zależności powiadomień, przeglądarki i parsowania.
 
-Wszystkie zmiany upstream: https://github.com/dgtlmoon/changedetection.io/compare/0.55.8...0.60.8`,
-    fr_FR: `Met à jour ChangeDetection.io vers 0.60.8.
+Wszystkie zmiany upstream: https://github.com/dgtlmoon/changedetection.io/compare/0.60.8...0.60.9`,
+    fr_FR: `Met à jour ChangeDetection.io vers 0.60.9.
 
-- Actualise l'interface de la liste des surveillances et des groupes, et ajoute la prise en charge des applications web progressives.
-- Améliore les résumés de changements par IA : consignes par surveillance ou groupe, requêtes non bloquantes et modification plus sûre des clés API.
-- Corrige la sélection des étapes du navigateur, la détection de réapprovisionnement, les dates RSS, l'historique et la gestion des fuseaux horaires du planificateur.
-- Inclut les correctifs upstream contre les scripts intersites, l'injection CSS et les failles CSRF lors de l'ajout de surveillances.
-- Améliore la validation des imports et de l'API, l'extraction des titres, le cache de l'interface et les traductions.
-- Gérer l'accès explique ce que signifie chaque option d'accès, et qu'un mot de passe enregistré n'est affiché qu'une seule fois.
-- Gérer l'accès affiche ses résultats dans la langue de StartOS.
+- Ne fait plus confiance aux certificats d'une autorité de certification compromise (eMudhra).
+- Corrige la lecture par la détection de réapprovisionnement et de prix des prix à virgule décimale (« 39,99 ») comme des nombres entiers.
+- Ajoute un filtre \`unixtime\` pour formater les horodatages Unix dans les notifications.
+- Le sélecteur de langue est disponible sur la page de connexion.
+- Met à jour les dépendances de notification, de navigateur et d'analyse.
 
-Tous les changements upstream : https://github.com/dgtlmoon/changedetection.io/compare/0.55.8...0.60.8`,
+Tous les changements upstream : https://github.com/dgtlmoon/changedetection.io/compare/0.60.8...0.60.9`,
   },
   migrations: {
     up: async ({ effects }) => {},
