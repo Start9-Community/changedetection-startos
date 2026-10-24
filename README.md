@@ -9,7 +9,7 @@
 > the upstream documentation is accurate and fully applicable — see the
 > Documentation section of `instructions.md` for links.
 
-[ChangeDetection.io](https://github.com/dgtlmoon/changedetection.io) watches web pages and tells you when they change. This package runs the LinuxServer image unmodified and adds one thing: a way to turn the application's own login on and off from StartOS, without handing it a plaintext password.
+[ChangeDetection.io](https://github.com/dgtlmoon/changedetection.io) watches web pages and tells you when they change. This package runs the LinuxServer image with its Alpine `nodejs` and `brotli-libs` upgraded, and adds one thing: a way to turn the application's own login on and off from StartOS, without handing it a plaintext password.
 
 - **Upstream repo:** <https://github.com/dgtlmoon/changedetection.io>
 - **Wrapper repo:** <https://github.com/Start9-Community/changedetection-startos>
@@ -35,7 +35,7 @@
 
 ## Image and Container Runtime
 
-One upstream image, consumed unmodified.
+One upstream image. The root `Dockerfile` upgrades its Alpine `nodejs` and `brotli-libs` and changes nothing else.
 
 | Property      | Value                                      |
 | ------------- | ------------------------------------------ |

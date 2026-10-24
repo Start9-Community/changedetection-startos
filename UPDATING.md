@@ -16,10 +16,10 @@ This package wraps the [LinuxServer changedetection.io](https://github.com/linux
   docker buildx imagetools inspect lscr.io/linuxserver/changedetection.io:<image tag>
   ```
 
-  The current pin lives in `startos/manifest/index.ts` at `images.main.source.dockerTag` (the tag after the `:` in `lscr.io/linuxserver/changedetection.io:<image tag>`).
+  The current pin lives in `startos/manifest/index.ts` at `images.main.source.dockerBuild.buildArgs.IMAGE` (the tag after the `:` in `lscr.io/linuxserver/changedetection.io:<image tag>`); the root `Dockerfile` builds on it.
 
 ## Applying the bump
 
-- Bump `dockerTag` in `startos/manifest/index.ts` to `lscr.io/linuxserver/changedetection.io:<new image tag>`.
+- Bump `IMAGE` in `startos/manifest/index.ts` to `lscr.io/linuxserver/changedetection.io:<new image tag>`.
 - Update `version` in `startos/versions/current.ts` to `<app version>:0` for an upstream application bump. Increment the downstream revision when the LinuxServer image changes without an upstream application version change.
 - Confirm the image still publishes both StartOS-supported architectures listed in `startos/manifest/index.ts`.
