@@ -4,15 +4,17 @@ This package wraps the [LinuxServer changedetection.io](https://github.com/linux
 
 ## Determining the upstream version
 
-- **changedetection.io application** ([dgtlmoon/changedetection.io](https://github.com/dgtlmoon/changedetection.io)) - fetch the latest stable release tag:
+- **changedetection.io application** ([dgtlmoon/changedetection.io](https://github.com/dgtlmoon/changedetection.io)) - inspect recent tags and releases, skipping prereleases rather than relying on GitHub's "Latest" badge:
 
   ```sh
-  gh release view -R dgtlmoon/changedetection.io --json tagName -q .tagName
+  gh api repos/dgtlmoon/changedetection.io/tags --jq '.[].name'
+  gh api repos/dgtlmoon/changedetection.io/releases --jq '.[] | {tag_name, prerelease, body}'
   ```
 
-- **LinuxServer image** ([linuxserver/docker-changedetection.io](https://github.com/linuxserver/docker-changedetection.io)) - confirm the latest LinuxServer release tag exists as a multi-arch image tag:
+- **LinuxServer image** ([linuxserver/docker-changedetection.io](https://github.com/linuxserver/docker-changedetection.io)) - list its release tags, then confirm the chosen stable release exists as a multi-arch image. LinuxServer can lag the application; use the newest application version with a published LinuxServer image:
 
   ```sh
+  gh api repos/linuxserver/docker-changedetection.io/tags --jq '.[].name'
   docker buildx imagetools inspect lscr.io/linuxserver/changedetection.io:<image tag>
   ```
 

@@ -95,6 +95,8 @@ Bound on the `ui-multi` MultiHost over HTTP and not masked.
 
 The application also makes **outbound** requests to every page it watches, on its own schedule. Those requests come from the server, so a watched site sees the server's address rather than the user's.
 
+The same interface serves upstream's optional MCP endpoint at `/mcp/v1`. It is disabled by default and is managed in the application's **MCP Server** settings, including its own access tokens and permissions. MCP tokens are separate from the REST API key. OAuth sign-in uses the password set by **Manage Access** and requires an HTTPS address reachable by the client; **Public MCP address** can override the address advertised to clients. No separate port or companion service is needed.
+
 ## Installation and First-Run Flow
 
 There is no wizard, no task, and no credential. The service starts and the interface is immediately usable, with no login.
