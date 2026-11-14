@@ -33,6 +33,8 @@ export const main = sdk.setupMain(async ({ effects }) => {
         PGID: '1000',
         TZ: 'Etc/UTC',
         DISABLE_VERSION_CHECK: 'true',
+        // MCP OAuth discovery must preserve the client-facing origin behind StartOS.
+        USE_X_SETTINGS: '1',
         // Select Playwright for custom WebSocket browser connections as well
         // as watches with browser steps. Custom connections in the app override
         // this upstream default; no browser companion is provided here.
