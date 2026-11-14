@@ -46,7 +46,7 @@ StartOS backs up the changedetection.io datastore. This includes watches, histor
 
 ## Limitations
 
-- The package does not manage separate WebDriver, remote Playwright, or sockpuppetbrowser companion containers. To use browser-backed watches, configure an external browser connection in changedetection.io's browser settings.
+- The package does not provide a browser companion container. To use browser-backed watches, add your external browser's WebSocket connection in changedetection.io's browser settings and select that connection for the watch. The default browser connection has no service behind it on StartOS.
 - Most changedetection.io settings are managed in the web UI; the web UI login password is the exception (set it via the **Manage Access** action).
 - Notification integrations must be reachable from your StartOS device.
 - You are responsible for complying with the terms, robots policies, and laws that apply to the sites you monitor.

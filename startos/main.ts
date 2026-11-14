@@ -33,6 +33,10 @@ export const main = sdk.setupMain(async ({ effects }) => {
         PGID: '1000',
         TZ: 'Etc/UTC',
         DISABLE_VERSION_CHECK: 'true',
+        // Select Playwright for custom WebSocket browser connections as well
+        // as watches with browser steps. Custom connections in the app override
+        // this upstream default; no browser companion is provided here.
+        PLAYWRIGHT_DRIVER_URL: 'ws://playwright-chrome:3000',
         ...(saltedPass ? { SALTED_PASS: saltedPass } : {}),
       },
     },

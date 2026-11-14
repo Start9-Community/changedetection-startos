@@ -51,6 +51,8 @@ One upstream image. The root `Dockerfile` upgrades its Alpine `nodejs` and `brot
 
 The package sets the standard LinuxServer user, group, and timezone variables, and turns off the application's upstream version check — a self-hosted install has no use for a nag about a release it cannot apply itself.
 
+`PLAYWRIGHT_DRIVER_URL` selects upstream's Playwright fetcher, so custom WebSocket browser connections work with or without browser steps. Its upstream default, `ws://playwright-chrome:3000`, has no companion service in this package: configure and select a custom browser connection in the application before using browser-backed watches.
+
 ## Volume and Data Layout
 
 One volume, holding everything the application keeps.
@@ -171,6 +173,7 @@ startos_managed_env_vars:
   - PGID
   - TZ
   - DISABLE_VERSION_CHECK
+  - PLAYWRIGHT_DRIVER_URL # selects Playwright; custom browser connections override the default
   - SALTED_PASS # only when a password is set
 dependencies: []
 interfaces:
