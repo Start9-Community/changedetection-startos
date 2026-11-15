@@ -28,7 +28,7 @@ Use groups to organize watches. If you use AI change summaries, configure the pr
 
 The optional **MCP Server** settings in changedetection.io let an assistant read or manage watches through your Web UI address with `/mcp/v1` appended. MCP is off by default. Enable it there and create an access token with the permissions the assistant needs; the REST API key does not work as an MCP token. Leave **Allow read-only access without sign-in** off unless you intend to share watch contents publicly.
 
-For OAuth sign-in, first require a login with **Manage Access** and use an HTTPS address reachable by the assistant. Set **Public MCP address** in the MCP settings if the address advertised to clients needs to differ from the one you use locally. You can disable MCP again in the same settings.
+For OAuth sign-in, first require a login with **Manage Access** and use an HTTPS address reachable by the assistant. The application uses the address requested through StartOS, including HTTPS. Set **Public MCP address** in the MCP settings if clients need a different advertised address. You can disable MCP again in the same settings.
 
 ## Requiring a login
 
