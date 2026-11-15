@@ -16,7 +16,7 @@ export const manifest = setupManifest({
       source: {
         dockerBuild: {
           buildArgs: {
-            IMAGE: 'lscr.io/linuxserver/changedetection.io:0.60.9-ls320',
+            IMAGE: 'lscr.io/linuxserver/changedetection.io:0.70.2-ls325',
           },
         },
       },
