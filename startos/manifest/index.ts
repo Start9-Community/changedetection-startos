@@ -5,7 +5,7 @@ export const manifest = setupManifest({
   id: 'changedetection',
   title: 'ChangeDetection.io',
   license: 'Apache-2.0',
-  packageRepo: 'https://github.com/Start9-Community/changedetection-startos',
+  packageRepo: 'https://github.com/Start9Labs/changedetection-startos',
   upstreamRepo: 'https://github.com/dgtlmoon/changedetection.io',
   marketingUrl: 'https://changedetection.io/',
   donationUrl: 'https://github.com/sponsors/dgtlmoon',
